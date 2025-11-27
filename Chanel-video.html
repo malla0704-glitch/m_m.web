@@ -9,49 +9,37 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    body {
+   body {
       padding: 30px;
       background-color: #f8f9fa;
       font-family: 'Poppins', sans-serif;
     }
 
+    /* 전체 콘텐츠 폭 통일 */
     .content-wrapper {
       max-width: 960px;
       margin: 0 auto;
-    }
-
-    .video-wrapper {
-      margin-top: 10px;
-    }
-
-    video {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
     .btn-back {
       display: inline-block;
       margin-bottom: 20px;
       color: #fff;
-      background-color: #000; /* Chanel 느낌의 블랙 */
+      background-color:#8e8475;
       padding: 8px 16px;
       border-radius: 8px;
       text-decoration: none;
       transition: 0.3s;
-      font-weight: 500;
     }
 
     .btn-back:hover {
-      background-color: #444;
+      background-color: #ac7f4e;
     }
 
     h2 {
       text-align: center;
       margin-bottom: 10px;
       font-weight: 600;
-      color: #111;
     }
 
     /* Tools Section */
@@ -63,7 +51,7 @@
     .tools-section h3 {
       margin-bottom: 10px;
       font-size: 20px;
-      color: #333;
+      color: #6a5f4e;
     }
 
     .tools-icons img {
@@ -72,40 +60,52 @@
       vertical-align: middle;
     }
 
+    /* Video */
+    .video-wrapper {
+      margin-top: 10px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    }
+
+    /* 설명 텍스트 */
     p {
       text-align: center;
-      margin-top: 25px;
       font-size: 16px;
-      line-height: 1.6;
-      color: #555;
+      line-height: 1.65;
+      color: #5a5548;
+      margin-top: 30px;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="content-wrapper">
+<div class="content-wrapper">
 
-    <a href="index.html" class="btn-back">← 돌아가기</a>
+  <a href="index.html" class="btn-back">← 돌아가기</a>
 
-    <h2>Chanel 25Bag 광고 영상</h2>
+  <h2>Chanel 슬라이드쇼 광고 영상</h2>
 
-    <!-- ⭐ Tools -->
-    <div class="tools-section">
-      <h3>Tools Used - PS, AE, FM</h3>
-      <div class="tools-icons">
-        <img src="./assets/img/어도비 아이콘 모음/photoshop.png" alt="Photoshop">
-        <img src="./assets/img/어도비 아이콘 모음/after-effects.png" alt="After Effects">
-        <img src="./assets/img/어도비 아이콘 모음/figma.png" alt="Figma">
-      </div>
+  <!-- ⭐ Tools 중앙정렬 -->
+  <div class="tools-section">
+    <h3>Tools Used - AE, FM</h3>
+    <div class="tools-icons">
+      <img src="./assets/img/어도비 아이콘 모음/after-effects.png" alt="After Effects">
+      <img src="./assets/img/어도비 아이콘 모음/figma.png" alt="Figma">
     </div>
+  </div>
 
-    <!-- ⭐ Video -->
-    <div class="video-wrapper">
-      <video controls autoplay muted poster="./assets/img/영상썸네일/샤넬1 썸네일.png">
-        <source src="./assets/video/샤넬-슬라이드쇼.mp4" type="video/mp4">
-        브라우저가 video 태그를 지원하지 않습니다.
-      </video>
-    </div>
+  <!-- ⭐ Video -->
+  <div class="video-wrapper">
+    <video controls autoplay muted poster="./assets/img/영상썸네일/샤넬1 썸네일.png">
+      <source src="./assets/video/샤넬-슬라이드쇼.mp4" type="video/mp4">
+      브라우저가 video 태그를 지원하지 않습니다.
+    </video>
+  </div>
 
     <p class="roboto-mono-min1">
       <strong>기획 · 3D · 편집</strong>을 모두 직접 진행한 슬라이드쇼 광고 영상입니다.<br><br>

@@ -11,7 +11,33 @@
       padding: 0;
       font-family: "SUIT", sans-serif;
       background: #f8f8f5;
-      color: #F8F4EA;
+      color: #60360f; /* 전체 텍스트 가독성 강화를 위한 기본 컬러 */
+    }
+
+    /* 왼쪽 상단 돌아가기 버튼 */
+    .btn-back {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #C08A4C;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    .btn-back:hover { opacity: 0.9; }
+
+    @media (max-width: 600px) {
+      .btn-back {
+        top: 10px;
+        left: 10px;
+        padding: 8px 14px;
+        font-size: 14px;
+      }
     }
 
     .detail-container {
@@ -31,20 +57,30 @@
       font-size: 36px;
       margin-bottom: 10px;
       text-align: center;
+      font-weight: 700;
       color: #60360f;
     }
 
     p {
       text-align: center;
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
       margin-bottom: 40px;
       color: #60360f;
+      font-weight: 500;
     }
+
     .tools-section {
       text-align: center;
       margin-top: 10px;
       margin-bottom: 40px;
+    }
+
+    .tools-section h3 {
+      color: #60360f;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 14px;
     }
 
     .tools-icons {
@@ -54,60 +90,42 @@
     }
 
     .tools-icons img {
-      width: 38px;
-      height: 38px;
+      width: 42px;
+      height: 42px;
       margin: 0 10px;
-      filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.08));
+      filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.1));
     }
 
-
-    a.back {
-      display: block;
-      text-align: center;
-      margin-top: 30px;
-      text-decoration: none;
-      color: #F8F4EA;
-      font-weight: 600;
-      font-size: 16px;
-    }
-
-    a.back:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 
 <body>
 
+  <a href="../index.html" class="btn-back">← 돌아가기</a>
+
   <div class="detail-container">
 
     <h1>SOBORU</h1>
-    <p>“따뜻한 향과 바삭한 포근함을 품은 작은 베이커리 친구, 소보루.
-        동글동글한 겉모습과 달콤한 마음씨를 가진 소보루는
-        누구의 하루든 살짝 더 부드럽고 기분 좋게 만들어주는 귀여운 베이킹 캐릭터입니다.”</p>
-     <br>
+    <p>
+      “따뜻한 향과 바삭한 포근함을 품은 작은 베이커리 친구, 소보루.<br>
+      동글동글한 겉모습과 달콤한 마음씨를 가진 소보루는<br>
+      누구의 하루든 살짝 더 부드럽고 기분 좋게 만들어주는<br>
+      귀여운 베이킹 캐릭터입니다.”
+    </p>
+
     <div class="tools-section">
-      <h3>Tools Used - AI,FM</h3>
+      <h3>Tools Used - AI, FM</h3>
       <div class="tools-icons">
-        <img src="./assets/img/어도비 아이콘 모음/illustrator.png" alt="Premiere Pro">
-        <img src="./assets/img/어도비 아이콘 모음/figma.png" alt="Premiere Pro">
+        <img src="./assets/img/어도비 아이콘 모음/illustrator.png" alt="Illustrator">
+        <img src="./assets/img/어도비 아이콘 모음/figma.png" alt="Figma">
       </div>
     </div>
 
-    <!-- 전체 상세 이미지 넣는 곳 -->
-    <!-- ↓↓↓ 여기에 원하는 이미지 계속 추가 가능 ↓↓↓ -->
-
-    <img src="./assets/img/소보루/소보루.png" alt=" Branding Main Image">
-    <br>
-    <br>
+    <img src="./assets/img/소보루/소보루.png" alt="">
     <img src="./assets/img/소보루/소보루 소개.png" alt="">
-  
-
-    <!-- ↑↑↑ 필요하면 이미지 더 추가 가능 ↑↑↑ -->
-
-    <a href="../index.html" class="back">← 포트폴리오로 돌아가기</a>
 
   </div>
 
 </body>
 </html>
+

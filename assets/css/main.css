@@ -83,16 +83,21 @@ tools-section {
 }
 
 .tools-icons img {
-  width: 38px;
-  height: 38px;
-  margin: 0 10px;
-  vertical-align: middle;
-  filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.08));
+  width: 40px;   /* 정사각 비율 유지 */
+  height: 40px;
+  object-fit: contain;       /* 비율 깨짐 방지 */
+  margin: 0 8px;
+  display: inline-block;
+  filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.1));
 }
 
-
-
-
+/* 모바일 */
+@media (max-width: 600px) {
+  .tools-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 
 
@@ -764,13 +769,14 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 
-/* 포트폴리오 박스, 이미지 통일 높이 고정 */
+/* 포트폴리오 박스 높이 반응형 조절 */
 .portfolio .portfolio-item {
-  height: 300px;
+  position: relative;
+  height: 260px; /* 기존 300 → 축소 */
   overflow: hidden;
 }
 
-/* 포트폴리오 이미지 전용 처리 (video 제외) */
+/* 이미지 크기 조정 */
 .portfolio .portfolio-item img:not(video) {
   width: 100%;
   height: 100%;
@@ -779,7 +785,26 @@ section,
   display: block;
 }
 
+/* PC, 태블릿, 모바일 반응형 */
+@media (max-width: 1200px) {
+  .portfolio .portfolio-item {
+    height: 220px;
+  }
+}
 
+@media (max-width: 768px) {
+  .portfolio .portfolio-item {
+    height: 180px;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-item {
+    height: 150px;
+  }
+}
+
+/* 필터 UI */
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -790,12 +815,10 @@ section,
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
-  margin: 0;
+  padding: 8px 20px;
+  margin: 0 4px 8px 4px;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1;
-  margin-bottom: 5px;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   font-family: var(--heading-font);
@@ -807,26 +830,7 @@ section,
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-  }
-}
-
-.portfolio .portfolio-item {
-  position: relative;
-  overflow: hidden;
-}
-
+/* hover info */
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
@@ -835,47 +839,123 @@ section,
   bottom: -100%;
   z-index: 3;
   transition: all ease-in-out 0.5s;
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  background: rgba(0,0,0,0.45);
   padding: 15px;
-}
-
-.portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-right: 50px;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 50px;
-  font-size: 24px;
-  top: calc(50% - 14px);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  transition: 0.3s;
-  line-height: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 14px;
-  font-size: 28px;
+  border-radius: 6px;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+--------------
+컨테이너 섹션
+
+/* 공통 컨테이너 */
+.detail-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* 제목 */
+.detail-container h1 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* 서브 텍스트 */
+.detail-container p.sub-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* 툴 아이콘 영역 */
+.tools-section {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.tools-section h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.tools-icons img {
+  width: 36px;
+  height: 36px;
+  margin: 0 6px;
+}
+
+/* 이미지 기본 설정 */
+.detail-container img {
+  width: 100%;
+  margin: 0 auto 35px auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* 갤러리 2단 구조 */
+.gallery-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .gallery-2col, .gallery-3col {
+    grid-template-columns: 1fr;
+  }
+  .detail-container {
+    padding: 60px 16px;
+  }
+  .detail-container h1 {
+    font-size: 32px;
+  }
+}
+
+/* 돌아가기 버튼 */
+.btn-back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 1000;
+  opacity: 0.95;
+}
+
+.btn-back:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .btn-back {
+    top: 10px;
+    left: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
 }
 
 /*--------------------------------------------------------------
