@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branding Design - 달뜨락</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F8F8F5;
+      font-family: "Poppins", sans-serif;
+      color: #473a17;
+    }
+
+    .btn-back {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      background: #c2a36f;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .detail-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 90px 40px 60px;
+      display: flex;
+      gap: 70px;
+      align-items: flex-start;
+    }
+
+    /* LEFT */
+    .left-info {
+      width: 36%;
+      text-align: left;
+    }
+
+    .left-info h1 {
+      font-size: 42px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #473a17;
+      line-height: 1.25;
+    }
+
+    .slogan {
+      font-size: 26px;
+      font-weight: 800;
+      text-align: center;
+      color: #6e5427;
+      margin: 16px 0 48px;
+      letter-spacing: 0.3px;
+    }
+
+    .left-info h3 {
+      margin-top: 34px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #6e5427;
+    }
+
+    .left-info p,
+    .left-info li {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #333;
+      margin-top: 8px;
+    }
+
+    .left-info ul {
+      padding-left: 18px;
+      list-style-position: outside;
+      margin-top: 10px;
+    }
+
+    /* RIGHT IMAGES */
+    .right-images {
+      width: 64%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .right-images img {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    }
+
+    /* Mobile */
+    @media (max-width: 992px) {
+      .detail-container {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+      .left-info,
+      .right-images {
+        width: 100%;
+      }
+      .left-info h1,
+      .slogan {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="../index.html" class="btn-back">← 돌아가기</a>
+
+<div class="detail-container">
+
+  <!-- LEFT -->
+  <div class="left-info">
+    <h1>Branding Design<br>달뜨락</h1>
+    <p class="slogan">달의 변화처럼, 한식의 다양함을 담아낸 감성 브랜딩</p>
+
+    <h3>작업 컨셉 (Concept)</h3>
+    <p>
+      달의 주기를 모티브로 <br> 
+      <strong>한식이 가진 다채로운 풍미와 계절의 흐름을<br>
+      </strong>시각적으로 표현했습니다.<br>
+      한식 다이닝의 전통성과 현대 감성이 공존하는 분위기를<br> 로고의 구조·비례·곡선을 통해 설계했습니다.
+    </p>
+
+    <h3>목적 (Goal)</h3>
+    <ul>
+      <li>전통의 깊이와 현대적 감각이 <br>공존하는 한식 다이닝 정체성 구축</li>
+      <li>달빛·여백·한식 조형미를 통해 <br>감성 경험 중심의 브랜딩 완성</li>
+      <li>다채로운 메뉴 확장성과 <br>브랜딩 확장 적용을 고려한 로고 키트 구성</li>
+    </ul>
+
+    <h3>디자인 방향 (Design Direction)</h3>
+    <ul>
+      <li>달의 주기(Line / Shape / Circle variations)를 <br>로고 조형 구조로 활용</li>
+      <li>Warm Beige + Dark Brown 자연톤 컬러 팔레트</li>
+      <li>곡선 중심 조형 · 여백 중심 미니멀 레이아웃</li>
+    </ul>
+
+    <h3>Role & Tools</h3>
+    <p><strong>Role</strong> : 브랜딩 기획 · 로고 디자인· 그래픽 가이드 제작</p>
+    <p><strong>Tools</strong> : Adobe Illustrator · Figma</p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right-images">
+    <img src="./assets/img/달뜨락/로고소개.png" alt="Dalttarack Identity Detail">
+  </div>
+
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Design - PIKADANG</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F8F8F5;
+      font-family: "Poppins", sans-serif;
+      color: #78B832;
+    }
+
+    .btn-back {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      background: #78B832;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .detail-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 90px 40px 60px;
+      display: flex;
+      gap: 70px;
+      align-items: flex-start;
+    }
+
+    /* LEFT TEXT */
+    .left-info {
+      width: 36%;
+      text-align: left;
+    }
+
+    .left-info h1 {
+      font-size: 42px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #5f8d30;
+      line-height: 1.25;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1.1s ease-out forwards;
+    }
+
+    .slogan {
+      font-size: 24px;
+      font-weight: 800;
+      text-align: center;
+      color: #78B832;
+      margin: 14px 0 48px;
+      letter-spacing: 0.3px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1.1s ease-out forwards;
+      animation-delay: 0.25s;
+    }
+
+    .left-info h3 {
+      margin-top: 34px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #5f8d30;
+    }
+
+    .left-info p,
+    .left-info li {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #333;
+      margin-top: 8px;
+    }
+
+    .left-info ul {
+      padding-left: 18px;
+      list-style-position: outside;
+      margin-top: 10px;
+    }
+
+    /* RIGHT IMAGES */
+    .right-images {
+      width: 64%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .right-images img {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    /* Fade-Up Animation */
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(24px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .detail-container {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+      .left-info, .right-images {
+        width: 100%;
+      }
+      .left-info h1, .slogan {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="../index.html" class="btn-back">← 돌아가기</a>
+
+<div class="detail-container">
+
+  <!-- LEFT -->
+  <div class="left-info">
+    <h1>Character Design<br>PIKADANG</h1>
+    <p class="slogan">피카소를 동경하는 강아지, 그림을 사랑하는 제빵사</p>
+
+    <h3>작업 컨셉 (Concept)</h3>
+    <p>
+      예술과 일상의 감성을 결합해<br>
+      <strong>따뜻하고 친근한 브랜드 캐릭터</strong>로 디자인했습니다.<br>
+      빵집 세계관 속에서 꿈을 실현해가는 이야기를 담았습니다.
+    </p>
+
+    <h3>목적 (Goal)</h3>
+    <ul>
+      <li>브랜드 IP 확장을 위한 캐릭터 중심 스토리 구축</li>
+      <li>굿즈·패키지·SNS 활용 확대 고려</li>
+      <li>다양한 표정과 포즈로 감정 몰입도 강화</li>
+    </ul>
+
+    <h3>디자인 방향 (Design Direction)</h3>
+    <ul>
+      <li>연두 + 브라운 자연톤 컬러</li>
+      <li>라운드형 친근한 쉐입</li>
+      <li>일러스트 기반 응용 시리즈 제작</li>
+    </ul>
+
+    <h3>Role & Tools</h3>
+    <p><strong>Role</strong> : 캐릭터 기획 · 일러스트 제작 · 굿즈/패키지 시안 제작</p>
+    <p><strong>Tools</strong> : Adobe Illustrator · Figma</p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right-images">
+    <img src="./assets/img/피카댕/피카댕썸네일.png" alt="PIKADANG Mockup">
+    <img src="./assets/img/피카댕/피카댕목업.png" alt="PIKADANG Mockup">
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+

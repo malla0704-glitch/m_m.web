@@ -1,0 +1,26 @@
+#745f4b
+
+밝은색 #d3b08c
+
+
+/* About 섹션 — 전체 글자 가독성 강화 버전 */
+.section-title h2 {
+  color: #B56F2E;   /* 딥 샌드 오렌지 */
+}
+
+.section-title p {
+  color: #8A6742;   /* 웜 브라운 */
+}
+
+.about .content p {
+  color: #8A6742;   /* 본문 설명 */
+}
+
+.about .content ul li {
+  color: #5E4A3C;   /* 정보 텍스트 */
+}
+
+.about .content span,
+.about .content strong {
+  color: #5E4A3C;   /* 강조 텍스트 */
+}

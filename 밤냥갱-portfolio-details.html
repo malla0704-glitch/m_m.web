@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Design - BAMNYANGKANG</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #F8F8F5;
+      font-family: "Poppins", sans-serif;
+      color: #68270D;
+    }
+
+    .btn-back {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      background: #8B4A24;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 100;
+    }
+
+    .detail-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 90px 40px 60px;
+      display: flex;
+      gap: 70px;
+      align-items: flex-start;
+    }
+
+    /* LEFT TEXT */
+    .left-info {
+      width: 36%;
+      text-align: left;
+    }
+
+    .left-info h1 {
+      font-size: 42px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 4px;
+      line-height: 1.22;
+      color: #4A2B13;
+      animation: fadeInDown 0.9s ease forwards;
+    }
+
+    .slogan {
+      font-family: "Poppins", sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      text-align: center;
+      color: #8B4A24;
+      letter-spacing: 0.5px;
+      margin: 14px 0 48px;
+      opacity: 0;
+      animation: fadeInUp 0.9s ease 0.25s forwards;
+    }
+
+    .left-info h3 {
+      margin-top: 34px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #8B4A24;
+    }
+
+    .left-info p,
+    .left-info li {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #333;
+      margin-top: 8px;
+    }
+
+    .left-info ul {
+      padding-left: 18px;
+      list-style-position: outside;
+      margin-top: 10px;
+    }
+
+    /* RIGHT IMAGES */
+    .right-images {
+      width: 64%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .right-images img {
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.13);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 992px) {
+      .detail-container {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+      .left-info,
+      .right-images {
+        width: 100%;
+      }
+      .left-info h1,
+      .slogan {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="../index.html" class="btn-back">← 돌아가기</a>
+
+<div class="detail-container">
+  <!-- LEFT -->
+  <div class="left-info">
+    <h1>Character Design<br>BAMNYANGKANG</h1>
+    <p class="slogan">작은 밤톨이 전하는 큰 따뜻함</p>
+
+    <h3>작업 컨셉 (Concept)</h3>
+    <p>
+      고양이의 따뜻한 시선과 밤톨의 포근한 이미지를 결합해<br>
+      <strong>친근하고 감정 연결이 가능한 캐릭터</strong>로 디자인했습니다.
+    </p>
+
+    <h3>목적 (Goal)</h3>
+    <ul>
+      <li>감정 기반의 IP 확장을 위한 팬덤형 캐릭터 구축</li>
+      <li>굿즈·패키지·SNS 적용을 고려한 다형 표현</li>
+      <li>브랜드 스토리 기반 감성 경험 제공</li>
+    </ul>
+
+    <h3>디자인 방향 (Design Direction)</h3>
+    <ul>
+      <li>밤색 + 아이보리 톤의 따뜻한 감성 팔레트</li>
+      <li>볼륨감 있는 라운드 쉐입과 부드러운 라인</li>
+      <li>다양한 활용이 가능한 표정·포즈 개발</li>
+    </ul>
+
+    <h3>Role & Tools</h3>
+    <p><strong>Role</strong> : 캐릭터 기획 · 일러스트 제작 · 굿즈 시안 작업</p>
+    <p><strong>Tools</strong> : Adobe Illustrator · Figma</p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right-images">
+    <img src="./assets/img/밤냥갱/밤냥갱썸네일.png" alt="Bamnyangkang Main">
+    <img src="./assets/img/밤냥갱/밤냥갱 소개.png" alt="Bamnyangkang Detail">
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
